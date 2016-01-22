@@ -34,7 +34,7 @@ figure(1)
 semilogy(1:n,f)
 hold on
 semilogy(1:n,p)      
-epsmachine=ones(n,1)/eps;
+epsmachine=ones(n,1)/(eps/2);
 semilogy(1:n,epsmachine)
 title('Semi-log of Fibonacci and pib')
 hold off
@@ -45,7 +45,7 @@ hold off
 
 
 
-n_test=5:n;  % Pk 5:n??
+n_test=5:100;  % Pk 5:n??
 results=zeros(length(n_test),3); % Matrice où l'on stock nos résultats
 
 for j=1:length(n_test) % Boucle sur l'ensemble des "n" testés

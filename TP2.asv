@@ -1,0 +1,15 @@
+% Burak Morali - Alexandre Carbonneau
+% TP2 - MAT6470
+
+% Constantes
+B=0.8;a=4;p0=0.5;A=4*B;q=1.6;
+
+% Conditions frontieres
+% x(1)=0.001;
+% p(1)=0;
+
+
+% Resolution algebrique avec Matlab
+
+syms x(t) p(t)
+eqn1 = diff(x) == 2*A(sinh(p)+q*x-x*cosh(p+q*x))
